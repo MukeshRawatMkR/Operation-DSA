@@ -1,4 +1,4 @@
 # Shorting Algos
- * Bubble Sort [27-03-202six]
- * Selection Sort []
- * Insertion Sort
+ 1. Bubble Sort [27-03-202six]
+ 2. Selection Sort []
+ 3. Insertion Sort

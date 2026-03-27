@@ -1,0 +1,36 @@
+//Compare adjacent elements
+import java.util.* ;
+import java.io.*; 
+
+public class Solution {
+public static void swap(int[] arr,int num1, int num2){
+    int temp=arr[num1];
+    arr[num1]=arr[num2];
+    arr[num2]=temp;
+//6 =+% `_
+}
+    public static void bubbleSort(int[] arr, int n) {          
+        for(int i=0;i<n-1;i++){
+        boolean isSwapped=false;//check if swapping doesn't happen to save TC.
+            for(int j=0; j<n-1-i; j++){//Because after each pass, the largest element is already at the end.
+                if(arr[j]>arr[j+1]){
+                    isSwapped=true;
+                    swap(arr, j, j+1);
+                }
+            }
+                    if(isSwapped==false){
+                    return;//or break
+                }
+        }
+    }
+}
+//NOTES:
+/*
+Complexity
+	Worst / Average TC: O(n^2)
+	Best TC: O(n) (already sorted, due to swapped flag)
+	Space Complexity: O(1)
+Properties
+	In-place: ✅ Yes
+	Stable: ✅ Yes
+*/
